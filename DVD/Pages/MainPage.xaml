@@ -9,6 +9,32 @@
       Title="MainPage" Background="#C5E7E7">
 
     <Grid>
-        <TextBlock Text="//Главная страница" FontSize="30" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="0" Margin="10" Foreground="#217878" TextAlignment="Center"  />
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="txbPoisk"  FontSize="30" FontFamily="Impact" Grid.Column="5" Grid.ColumnSpan="4" Grid.Row="0" Margin="40 10 0 0" Foreground="LightCyan" TextAlignment="Center"  />
+        <TextBlock Text="Поиск" FontSize="25" FontFamily="Impact" Grid.Column="4" Grid.ColumnSpan="2" Grid.Row="0" Margin=" 0 10 0 0" Foreground="#217878" TextAlignment="Center"  />
+
     </Grid>
 </Page>

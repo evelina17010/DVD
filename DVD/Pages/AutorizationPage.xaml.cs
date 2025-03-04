@@ -27,12 +27,27 @@ namespace DVD.Pages
 
         private void Vhodbtn_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new MainPage());
+           
         }
 
         private void Regesrtbtn_Click(object sender, RoutedEventArgs e)
         {
-             NavigationService.Navigate(new RegisrtationPage());
+            NavigationService.Navigate(new MainPage());
+        }
+
+        private void Reg_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            NavigationService.Navigate(new RegisrtationPage());
+        }
+
+        private void Reg_MouseEnter(object sender, MouseEventArgs e)
+        {
+            Reg.Foreground=new SolidColorBrush(Colors.LightSkyBlue);
+        }
+
+        private void Reg_MouseLeave(object sender, MouseEventArgs e)
+        {
+            Reg.Foreground = new SolidColorBrush(Colors.Black);
         }
     }
 }
